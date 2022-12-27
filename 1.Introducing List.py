@@ -1,5 +1,6 @@
 #Creating  a list
-Names = [ 'soj', 'Key', 'Ra', 'Ked', 'An', 'Chi']
+Names = [ 'Soj', 'Key', 'Ra', 'Ked', 'Swi', 'An', 'Chi']
+print(Names)
 
 #Accessing elements of list using respective index values.
 print(Names[-1])
@@ -13,6 +14,7 @@ print (message)
 
 #Inserting an element at position 0
 Names.insert(0, 'Trish')
+print(Names)
 
 #Deleting element from the list. del deletes permanently can use remove() or pop() method for reuse of the item. 
 del Names[-1]
@@ -26,8 +28,7 @@ print(f"{notBFF.title()} is not my BFF.")
 
 #Removing an Item by Value
 #remove() only deletes the first occurence of that value.
-Names = [ 'Soj', 'Key', 'Ra', 'Ked', 'An']
-Busy = 'An'
+Busy = 'Swi'
 Names.remove(Busy)
 print(Names)
 
@@ -49,4 +50,5 @@ Names.sort(reverse=True)
 print(Names)
 
 #Finding a length of the list
-len(Names)
+Length= len(Names)
+print(f"The length of the list is {Length}.")
