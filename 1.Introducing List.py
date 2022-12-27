@@ -1,39 +1,50 @@
 #Creating  a list
-Names = [ 'Soj', 'Key', 'Ra', 'Ked', 'An']
-#Accessing content of list using index value
+Names = [ 'soj', 'Key', 'Ra', 'Ked', 'An', 'Chi']
+
+#Accessing elements of list using respective index values.
 print(Names[-1])
 
-message = f"Hey, {Names[0].title()}"
-
+#Using individual values from the list to compose a message.
+#Using title() to format the names correctly. 
+message = f"Hey, {Names[0].title()}" #Index position starts at 0. Item at index -1, Python always returns the last item in the list
 print (message)
-#Removing last item in the list using pop()
-#to remove from any index, use index in parantheses. ex. pop(0)
-#pop allows reuse of the item, del deletes permanently
-# or can use remove() method.
 
+#Modifying elements in a list.
+
+#Inserting an element at position 0
+Names.insert(0, 'Trish')
+
+#Deleting element from the list. del deletes permanently can use remove() or pop() method for reuse of the item. 
+del Names[-1]
+print(Names)
+
+#Removing last item in the list using pop() and reuse that item.
+#to remove from any index, use index in parantheses. ex. pop(0)
 notBFF = Names.pop()
+print(Names)
 print(f"{notBFF.title()} is not my BFF.")
 
-#remove() only deletes the first occurence.
+#Removing an Item by Value
+#remove() only deletes the first occurence of that value.
 Names = [ 'Soj', 'Key', 'Ra', 'Ked', 'An']
 Busy = 'An'
 Names.remove(Busy)
-
-#Add item to existing list.
 print(Names)
+
+#Appending element to the end of the existing list.
 NotBusy = 'Raj'
 Names.append(NotBusy)
 print(Names)
 print(f"\n {Busy.title()} can't make it to the party :( but {NotBusy} is joining :) " )
 
-
-#Inserting at position 0
-Names.insert(0, 'Trish')
-#Sorting the order of the list temporarily
+#Organizing a list
+print(Names)
+#Sorting the order of the list temporarily using sorted().
 print(sorted(Names))
 print(Names)
-# can use reverse=True for reverse alphabetical order.
 
+#Sorting the order of the list permanently using sort().
+# can use reverse=True for reverse alphabetical order.
 Names.sort(reverse=True)
 print(Names)
 
