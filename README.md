@@ -1,4 +1,2 @@
 # Contribute
-- Fork this project
-- Make changes
-- Submit a pull request
+- Learn Python Crash Course
